@@ -1,0 +1,30 @@
+<div class="page">
+    <!-- <div class="demo" style="font-family: 'Open Sans'; font-weight: 600; font-style: normal;"> -->
+    <div class="demo" [ngStyle]="{'font-family': fontFamily, 'font-weight': fontWeight, 'font-style': fontStyle}">
+        <h1>{{ fontDescription }}</h1>
+        <pre>
+.your-style {{ '{' }}
+    font-family: '{{ fontFamily }}';
+    font-weight: {{ fontWeight }};
+    font-style: {{ fontStyle }};
+}</pre>
+        <div class="font-container">
+            <p class="letters">
+                abcdefghijklmnopqrstuvwxyz<br>
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                0123456789.:,;()*!?'@#<>$%&^+-=~
+            </p>
+            <p class="s10" style="font-size: 10px;">{{ sampleText }}</p>
+            <p class="s11" style="font-size: 11px;">{{ sampleText }}</p>
+            <p class="s12" style="font-size: 12px;">{{ sampleText }}</p>
+            <p class="s14" style="font-size: 14px;">{{ sampleText }}</p>
+            <p class="s18" style="font-size: 18px;">{{ sampleText }}</p>
+            <p class="s24" style="font-size: 24px;">{{ sampleText }}</p>
+            <p class="s30" style="font-size: 30px;">{{ sampleText }}</p>
+            <p class="s36" style="font-size: 36px;">{{ sampleText }}</p>
+            <p class="s48" style="font-size: 48px;">{{ sampleText }}</p>
+            <p class="s60" style="font-size: 60px;">{{ sampleText }}</p>
+            <p class="s72" style="font-size: 72px;">{{ sampleText }}</p>
+        </div>
+    </div>
+</div>
